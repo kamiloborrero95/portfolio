@@ -1,0 +1,123 @@
+body {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+header{
+    margin-bottom: 0;
+}
+.contact-main { /*contenedor del main*/
+    background-image: none;
+    height: 100vh;
+    overflow: hidden;
+    margin-bottom: 5rem;
+}
+.contact-form{ /*contenedor del formulario*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    gap: 5px; /* Agregar espacio entre .form-info y .form */
+}
+.form-info{ /*info de contacto del formulario*/
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 5px solid #007bff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 20vw;
+    height: 60vh;
+    font-size: 18px;
+    color: #0056b3;
+}
+.form { /*formulario y campos*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1.5rem;
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 5px solid #007bff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 30vw;
+    height: 60vh;
+}
+
+.contact-form form {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s, box-shadow 0.3s, background-color 0.3s;
+}
+
+.contact-form input:hover,
+.contact-form textarea:hover {
+    background-color: #e6f7ff;
+    border-color: #0056b3;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #0056b3;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+.contact-form input:focus::placeholder,
+.contact-form textarea:focus::placeholder {
+    transform: translateY(-20px);
+    opacity: 0;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.contact-form button {
+    padding: 15px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+.contact-form button:active {
+    transform: translateY(0);
+}
+
+.contact-me h1 {
+    font-size: 2.5rem;
+    color: #007bff;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.contact-me p {
+    font-size: 1.2rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+    color: antiquewhite;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+}

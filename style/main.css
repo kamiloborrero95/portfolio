@@ -104,6 +104,7 @@ footer {
     align-items: center;
     padding: 20px;
     color: #fff;
+    max-height: 10rem;
 }
 
 .social {
@@ -122,4 +123,23 @@ footer {
 
 .social a:hover {
     color: #00d4ff;
+}
+
+.copy{
+    margin: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.copy a{
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s, border-bottom 0.3s;
+    border:0.5px solid #00d4ff;
+    border-radius: 50px;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.8);
+}
+.copy a:hover{
+    color: #00d4ff; /* Change text color on hover */
 }

@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(8,1,139);
+    background: -moz-linear-gradient(180deg, rgba(8,1,139,1) 0%, rgba(8,27,41,1) 51%, rgba(0,212,255,1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(8,1,139,1) 0%, rgba(8,27,41,1) 51%, rgba(0,212,255,1) 100%);
+    background: linear-gradient(180deg, rgba(8,1,139,1) 0%, rgba(8,27,41,1) 51%, rgba(0,212,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#08018b",endColorstr="#00d4ff",GradientType=1);
+    min-height: 100vh;
+    max-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.container {
+    font-family: 'Roboto', sans-serif;
+    background: rgb(8,1,139);
+    background: linear-gradient(338deg, rgba(8,1,139,1) 0%, rgba(8,27,41,1) 100%);
+    color: #e0e0e0;
+    background-repeat: no-repeat;
+    border-radius: 50px;
+    height: auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    margin-bottom: 100px;
+    color: #fff;
+}
+
+nav {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+}
+
+.photo img {
+    width: 120px;
+    height: 100px;
+    margin-right: 10px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin-left: auto;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s, border-bottom 0.3s;
+}
+
+nav ul li a:hover {
+    color: #00d4ff; /* Change text color on hover */
+    border-bottom: 2px solid #00d4ff; /* Add bottom border on hover */
+}
+
+main {
+    display: flex;
+    justify-content: flex-start;
+    flex-grow: 1;
+    overflow: auto;
+    font-style: italic;
+    background: url('/img/interschool logo.png') no-repeat right top; /* Ensure the image is positioned to the right */
+    background-position: right 150px top; /* Add margin to the right */
+    background-size: contain;
+}
+
+.main-section {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0;
+}
+
+.main-section div {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-section div h1,
+.main-section div p {
+    padding: 2px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    color: #fff;
+}
+
+.social {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.social a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 2.5rem;
+    transition: color 0.3s;
+}
+
+.social a:hover {
+    color: #00d4ff;
+}

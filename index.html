@@ -1,46 +1,103 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Cristian C. Corredor's portfolio showcasing skills, projects, and contact information.">
     <meta name="keywords" content="Cristian C. Corredor, portfolio, systems engineer, English teacher, web development, projects">
     <meta name="author" content="Cristian C. Corredor">
-    <link rel="stylesheet" href="/style/main.css">
+    <link rel="stylesheet" href="estilos/styles.css">
+    <link rel="stylesheet" href="estilos/responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <title>My Portfolio - Cristian C. Corredor</title>
+
+    <title>Mi Proyecto</title>
 </head>
 <body>
     <div class="container">
         <header>
+            <div class="photo"><img src="assets/img/logo.jpg" alt="Logo"></div>
             <nav>
-                <div class="photo"><img src="/img/firma-Photoroom.png" alt="Logo"></div>
                 <ul>
-                    <li><a href="/assets/about.html">About</a></li>
-                    <li><a href="/assets/projects.html">Projects</a></li>
+                    <li><a href="#about-section">About</a></li>
+                    <li><a href="#skills-section">Skills</a></li>
+                    <li><a href="#projects-section">Projects</a></li>
                     <li><a href="/assets/contact.html">Contact</a></li>
                 </ul>
             </nav>
-        </header>
-        <main>
             <section class="main-section">
                 <div>
                     <h1>Cristian C. Corredor</h1>
                     <p>Systems Engineer and English Teacher</p>
                     <p>Web Development Student</p>
                 </div>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat est laudantium atque, maxime quis consequatur ad. Beatae exercitationem, quibusdam voluptate possimus eius sapiente voluptas illo eos dolorem quaerat commodi cupiditate, rem asperiores sit! Saepe, facere sint hic, quaerat sed laboriosam ullam aspernatur aperiam alias, officiis qui quos at veniam temporibus.</p>
+                <p>Welcome to my portfolio! Here you will find information about my skills, projects, and how to contact me. I am passionate about web development and always eager to learn new technologies.</p>
+            </section>
+        </header>
+        <main>
+            <section id="about-section" class="about-section">
+                <h2>About</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>My name is Cristian C. Corredor. I am a systems engineer and English teacher with a passion for web development. I have experience in software development, database management, and teaching. I am currently studying web development to expand my knowledge and skills.</p>
+                        <p>I am a proactive, responsible, and organized person. I enjoy working in teams and learning from others. I am always looking for new challenges and opportunities to grow as a professional.</p>
+                        <p>My goal is to become a full-stack developer and work on projects that have a positive impact on society. I am excited to continue learning and developing my skills in web development.</p>
+                    </div>
+                </div>
+            </section>
+            <div class="section-divider"></div>
+            <section id="skills-section" class="skills-section">
+                <h2>Skills</h2>
+                <div class="skills-content">
+                    <div class="skills-text">
+                        <p>These are some of the skills I have developed throughout my career:</p>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>Python</li>
+                            <li>Java</li>
+                            <li>SQL</li>
+                            <li>Git</li>
+                            <li>Linux</li>
+                            <li>English</li>
+                            <li>Software Testing</li>
+                            <li>Software QA</li>
+                            <li>Manual Testing</li>
+                            <li>Automation Testing</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </section>
+            <div class="section-divider"></div>
+            <section id="projects-section" class="projects-section">
+                <h2>Projects</h2>
+                <p>These are the projects I have developed throughout my career:</p>
+                <div class="projects-content">
+                    <ul>
+                        <li><a href="https://github.com/kamiloborrero95/productPreviewcard">Project 1</a></li>
+                        <li><a href="#">Project 2</a></li>
+                        <li><a href="#">Project 3</a></li>
+                        <li><a href="#">Project 4</a></li>
+                        <li><a href="#">Project 5</a></li>
+                        <li><a href="#">Project 6</a></li>
+
+                    </ul>
+                </div>
             </section>
         </main>
+        <div class="section-divider"></div>
         <footer>
-            <div class="social">
-                <a href="https://linkedin.com/in/camilo-borrero" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://wa.me/+573168178821" target="_blank"><i class="fab fa-whatsapp"></i></a>
-                <a href="https://github.com/kamiloborrero95" target="_blank"><i class="fab fa-github"></i></a>
-            </div>
-            <div class="copy">
-                <p>&copy; 2025 Cristian C. Corredor. All rights reserved.</p>
-                <p><a href="/assests/contact.html">CONTACT ME</a></p>
+            <div class="footer-content">
+                <div class="social">
+                    <a href="https://linkedin.com/in/camilo-borrero" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://wa.me/+573168178821" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://github.com/kamiloborrero95" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+                <div class="copy">
+                    <p>&copy; 2025 Cristian C. Corredor. All rights reserved.</p>
+                    <p class="contactMe-button"><a href="./assets/contact.html">CONTACT ME</a></p>
+                </div>
             </div>
         </footer>
     </div>

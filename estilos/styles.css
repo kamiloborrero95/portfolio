@@ -1,0 +1,249 @@
+:root {
+    --primary-color: #0297AB;
+    --secondary-color: #DB076E;
+    --text-color: #000;
+    --background-color: #f0f0f0;
+    --font-family: Arial, sans-serif;
+    --header-background: linear-gradient(166deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 53%, rgba(132,132,132,1) 100%);
+}
+
+body {
+    font-family: var(--font-family);
+    margin: 5rem;
+    padding: 0;
+    background-color: var(--background-color);
+    box-shadow: var(--secondary-color) 1px 1px 1px;
+}
+
+p {
+    font-size: 1.5em;
+}
+
+h1, h2 {
+    text-align: center;
+    text-decoration: overline;
+    font-style: italic;
+    text-shadow: var(--text-color) 1px 1px 1px;
+    color: var(--primary-color);
+    font-size: 2.5em;
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeInUp 1s forwards;
+}
+
+#app {
+    text-align: center;
+    padding: 50px;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+    background: var(--header-background);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeInUp 1s forwards 0.5s;
+}
+
+header .photo {
+    display: flex;
+    align-items: center;
+}
+
+header .photo img {
+    height: 7em;
+    width: auto;
+    box-shadow: var(--primary-color) 1px 1px 1px;
+    border-radius: 10px;
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #333; /* Ajusta el color del texto para que contraste con el fondo */
+}
+
+header nav .photo {
+    margin-bottom: 10px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 5em;
+    margin: 2em 0;
+    padding: 0;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header nav ul li {
+    display: inline;
+    position: relative;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: bold;
+    position: relative;
+    padding: 5px 0;
+}
+
+header nav ul li a::before,
+header nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    background-color: var(--secondary-color);
+    transition: width 0.3s ease-in-out;
+}
+
+header nav ul li a::before {
+    left: 50%;
+}
+
+header nav ul li a::after {
+    right: 50%;
+}
+
+header nav ul li a:hover {
+    color: var(--primary-color);
+}
+
+header nav ul li a:hover::before,
+header nav ul li a:hover::after {
+    width: 50%;
+}
+
+.main-section {
+    margin: 20px 5px;
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeInUp 1s forwards 1s;
+}
+
+.main-section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.main-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.main-section ul li {
+    margin: 5px 0;
+}
+
+.about-section, .skills-section, .projects-content {
+    margin: 10em 10px;
+}
+
+.skills-content ul,
+.projects-content ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5em;
+    list-style-type: none;
+}
+
+.skills-content ul li,
+.projects-content ul li {
+    background: var(--header-background);
+    color: var(--text-color);
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.skills-content ul li:hover,
+.projects-content ul li:hover {
+    background: linear-gradient(166deg, rgba(132,132,132,1) 0%, rgba(255,255,255,1) 100%);
+}
+
+.projects-content ul li a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.5em;
+}
+
+.section-divider {
+    height: 2px;
+    background-color: #ccc;
+    margin: 40px 0;
+}
+
+footer {
+    background: var(--header-background);
+    padding: 20px 0;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeInUp 1s forwards 1.5s;
+}
+
+footer .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+footer .social {
+    display: flex;
+    gap: 7em;
+}
+
+footer .social a {
+    color: var(--text-color);
+    font-size: 3em;
+    transition: color 0.3s ease-in-out;
+}
+
+footer .social a:hover {
+    color: #555;
+}
+
+footer .copy {
+    color: #333;
+}
+
+footer .copy p {
+    margin: 5px 0;
+}
+
+footer .copy a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer .copy a:hover {
+    text-decoration: underline;
+}
+
+.contactMe-button {
+    box-shadow: #333 1px 1px 1px;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

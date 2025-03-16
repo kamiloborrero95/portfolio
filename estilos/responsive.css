@@ -1,0 +1,225 @@
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+    body{
+        font-size: .83em;
+    }
+    h1,h2{
+        font-size: 1.4em;
+    }
+    header {
+        flex-direction: column;
+        align-items: center; /* Centrar el logo y el menú */
+    }
+
+    header .photo {
+        margin-bottom: 10px;
+        cursor: pointer; /* Añadir cursor pointer para indicar que es clickeable */
+        height: 5em; /* Ajustar el tamaño del logo */
+        display: flex; /* Asegurar que el logo se mantenga visible */
+    }
+
+    header nav {
+        width: 100%;
+        text-align: center; /* Centrar el menú */
+    }
+
+    header nav ul {
+        display: none; /* Ocultar solo la lista de elementos del menú por defecto */
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+
+    header nav ul.active {
+        display: flex; /* Mostrar la lista de elementos del menú cuando se activa */
+    }
+
+    header nav ul li {
+        display: block;
+        width: 100%;
+    }
+
+    header nav ul li a {
+        padding: 10px 0;
+        display: block;
+        width: 100%;
+        text-align: center; /* Centrar los enlaces del menú */
+    }
+
+    .main-section {
+        padding: 20px;
+    }
+
+    .main-section h2 {
+        font-size: 20px;
+    }
+
+    .main-section ul {
+        padding-left: 20px;
+    }
+
+    .main-section ul li {
+        margin: 10px 0;
+    }
+
+    footer .footer-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    footer .social {
+        display: flex;
+        flex-direction: row; /* Asegurar que los iconos se muestren horizontalmente */
+        justify-content: center; /* Centrar los iconos */
+        gap: 30px; /* Ajustar el espacio entre los iconos */
+    }
+
+    footer .social a {
+        margin: 5px;
+    }
+
+    footer .copy {
+        text-align: center;
+    }
+}
+
+/* Mediano (tabletas) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    header {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    header .photo {
+        margin-bottom: 0;
+        cursor: default;
+        display: flex; /* Asegurar que el logo se mantenga visible */
+    }
+
+    header nav {
+        display: flex;
+        width: auto;
+        text-align: left;
+    }
+
+    header nav ul {
+        flex-direction: row;
+        gap: 20px;
+        width: auto;
+    }
+
+    header nav ul li {
+        display: inline;
+        width: auto;
+    }
+
+    header nav ul li a {
+        padding: 5px 0;
+        display: inline-block;
+        width: auto;
+        text-align: left;
+    }
+
+    .main-section {
+        padding: 40px;
+    }
+
+    .main-section h2 {
+        font-size: 22px;
+    }
+
+    .main-section ul {
+        padding-left: 30px;
+    }
+
+    .main-section ul li {
+        margin: 15px 0;
+    }
+
+    footer .social {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center; /* Centrar los iconos */
+        gap: 30px; /* Ajustar el espacio entre los iconos */
+    }
+
+    footer .social a {
+        margin: 0 10px;
+    }
+
+    footer .copy {
+        text-align: center;
+    }
+
+}
+
+@media (min-width: 769px) and (max-width: 1025px) {
+    header {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    header .photo {
+        margin-bottom: 0;
+        cursor: default;
+        display: flex; /* Asegurar que el logo se mantenga visible */
+    }
+
+    header nav {
+        display: flex;
+        width: auto;
+        text-align: left;
+    }
+
+    header nav ul {
+        flex-direction: row;
+        gap: 20px;
+        width: auto;
+    }
+
+    header nav ul li {
+        display: inline;
+        width: auto;
+    }
+
+    header nav ul li a {
+        padding: 5px 0;
+        display: inline-block;
+        width: auto;
+        text-align: left;
+    }
+
+    .main-section {
+        padding: 40px;
+    }
+
+    .main-section h2 {
+        font-size: 22px;
+    }
+
+    .main-section ul {
+        padding-left: 30px;
+    }
+
+    .main-section ul li {
+        margin: 15px 0;
+    }
+
+    footer .social {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center; /* Centrar los iconos */
+        gap: 30px; /* Ajustar el espacio entre los iconos */
+    }
+
+    footer .social a {
+        margin: 0 10px;
+    }
+
+    footer .copy {
+        text-align: center;
+    }
+}

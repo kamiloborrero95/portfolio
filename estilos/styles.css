@@ -13,6 +13,7 @@ body {
     padding: 0;
     background-color: var(--background-color);
     box-shadow: var(--secondary-color) 1px 1px 1px;
+    color: var(--text-color);
 }
 
 p {
@@ -246,4 +247,31 @@ footer .copy a:hover {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+.dark-mode-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease-in-out;
+}
+
+.dark-mode-toggle:hover {
+    background-color: var(--secondary-color);
+}
+
+body.dark-mode {
+    --primary-color: #1e1e1e;
+    --secondary-color: #ff4081;
+    --text-color: #fff;
+    --background-color: #121212;
+    --header-background: linear-gradient(166deg, rgba(30,30,30,1) 0%, rgba(30,30,30,1) 53%, rgba(60,60,60,1) 100%);
 }

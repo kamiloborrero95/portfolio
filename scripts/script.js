@@ -30,8 +30,28 @@ window.addEventListener('resize', function() {
 document.addEventListener('DOMContentLoaded', function() {
     const logo = document.querySelector('header .photo');
     const navUl = document.querySelector('header nav ul');
+    const darkModeToggle = document.getElementById('dark-mode-toggle');
 
     logo.addEventListener('click', function() {
         navUl.classList.toggle('active');
     });
+
+    darkModeToggle.addEventListener('click', function() {
+        document.body.classList.toggle('dark-mode');
+        darkModeToggle.textContent = document.body.classList.contains('dark-mode') ? 'Light Mode' : 'Dark Mode';
+        adjustTextColors();
+    });
+
+    function adjustTextColors() {
+        const textElements = document.querySelectorAll('p, h1, h2, h3, h4, h5, h6, a, span');
+        textElements.forEach(element => {
+            if (document.body.classList.contains('dark-mode')) {
+                element.style.color = '#ffffff';
+            } else {
+                element.style.color = '#000000';
+            }
+        });
+    }
+
+    adjustTextColors();
 });

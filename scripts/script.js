@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
 
         function adjustTextColors() {
-            const textElements = document.querySelectorAll('h1, h2, h3, h4, h5, h6, span,a,p');
+            const textElements = document.querySelectorAll('h1, h2, h3, h4, h5, h6, span, a, p');
             textElements.forEach(element => {
                 if (document.body.classList.contains('dark-mode')) {
                     element.style.color = '#2097AB';
@@ -48,6 +48,27 @@ document.addEventListener('DOMContentLoaded', function() {
                 } else {
                     element.style.backgroundColor = '#ffffff';
                     element.style.color = '#000000';
+                }
+            });
+
+            const footerSocial = document.querySelectorAll('.footer-content .social a');
+            footerSocial.forEach(element => {
+                if (document.body.classList.contains('dark-mode')) {
+                    element.style.color = '#ffffff';
+                    element.addEventListener('mouseover', function() {
+                        element.style.color = '#2097AB';
+                    });
+                    element.addEventListener('mouseout', function() {
+                        element.style.color = '#ffffff';
+                    });
+                } else {
+                    element.style.color = '#000000';
+                    element.addEventListener('mouseover', function() {
+                        element.style.color = '#2097AB';
+                    });
+                    element.addEventListener('mouseout', function() {
+                        element.style.color = '#000000';
+                    });
                 }
             });
         }

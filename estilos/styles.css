@@ -216,8 +216,16 @@ footer .social a {
     color: var(--text-color);
 }
 
-footer .social a i:hover {
+footer .social a:hover {
     color: var(--primary-color);
+}
+
+body.dark-mode footer .social a {
+    color: #ffffff;
+}
+
+body.dark-mode footer .social a:hover {
+    color: #2097AB;
 }
 
 footer .copy {

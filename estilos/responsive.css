@@ -1,6 +1,17 @@
 /* Estilos para dispositivos móviles */
+@media (max-width: 425px){
+    .contact-info p{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
 @media (max-width: 768px) {
     body{
+        margin:0 0 0 7px;
+        padding:0;
+        width: 90%;
         font-size: .83em;
     }
     h1,h2{
@@ -155,7 +166,7 @@
 
 }
 
-@media (min-width: 769px) and (max-width: 1025px) {
+@media (min-width: 769px) and (max-width: 1440px) {
     header {
         flex-direction: row;
         align-items: center;

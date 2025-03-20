@@ -1,6 +1,6 @@
 /* Estilos para dispositivos móviles */
-@media (max-width: 425px){
-    .contact-info p{
+@media (max-width: 425px) {
+    .contact-info p {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -8,15 +8,17 @@
 }
 
 @media (max-width: 768px) {
-    body{
-        margin:0 0 0 7px;
-        padding:0;
+    body {
+        margin: 0 0 0 7px;
+        padding: 0;
         width: 90%;
         font-size: .83em;
     }
-    h1,h2{
+
+    h1, h2 {
         font-size: 1.4em;
     }
+
     header {
         flex-direction: column;
         align-items: center; /* Centrar el logo y el menú */

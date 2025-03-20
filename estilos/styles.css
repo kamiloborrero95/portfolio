@@ -241,17 +241,20 @@ footer .copy a {
     text-decoration: none;
     font-weight: bold;
 }
-footer .copy a:hover{
+
+footer .copy a:hover {
     color: var(--secondary-color);
 }
 
 .contactMe-button {
     box-shadow: #333 1px 1px 1px;
 }
-.contactMe-button:hover{
+
+.contactMe-button:hover {
     background-color: var(--primary-color);
     color: var(--text-color);
 }
+
 @keyframes fadeInUp {
     to {
         opacity: 1;

@@ -93,6 +93,19 @@
     footer .copy {
         text-align: center;
     }
+
+    .contact-section {
+        flex-direction: column;
+    }
+
+    .contact-content {
+        flex-direction: column;
+    }
+
+    .contact-form, .contact-info {
+        max-width: 100%;
+        margin: 10px 0;
+    }
 }
 
 /* Mediano (tabletas) */
@@ -164,6 +177,18 @@
         text-align: center;
     }
 
+    .contact-section {
+        flex-direction: column;
+    }
+
+    .contact-content {
+        flex-direction: column;
+    }
+
+    .contact-form, .contact-info {
+        max-width: 100%;
+        margin: 10px 0;
+    }
 }
 
 @media (min-width: 769px) and (max-width: 1440px) {
